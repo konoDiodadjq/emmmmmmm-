@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+#include<windows.h>
+int main()
+{
+	int fen = 0;
+	printf("请输入你的语文分数   tip:120满分\n");
+	printf("分数:");
+	cin >> fen;
+	printf("分析中。。。。。。");
+	Sleep(2500);
+	cout << '\a' << endl;
+	printf("评语:");
+	if (fen >= 115)
+		printf("大佬nb!\n");
+	else if (fen >= 100)
+		printf("秀儿!\n");
+	else if (fen >= 90)
+		printf("优秀!\n");
+	else if (fen >= 72)
+		printf("不错!\n");
+	else
+		printf("垃圾!\n");
+	system("pause");
+	return 1;
+
+
+}
